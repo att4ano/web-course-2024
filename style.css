@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f1aa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    color: #333333;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(147, 133, 89);
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+ul {
+    margin-right: 60px;
+    font-size: 20px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a {
+    color: #333333;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section#input {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#input input[type="text"] {
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+section#input button {
+    height: 35px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+section#input button:hover {
+    background-color: #666;
+}
+
+main {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #444;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.album {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.album img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.album h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+.album p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.album button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.album button:hover {
+    background-color: #666;
+}
+
+#best div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+#best img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#best h3 {
+    margin-top: 0;
+    color: #444;
+}
+
+#best p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#best button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#best button:hover {
+    background-color: #666;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
