@@ -5,50 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="vinyl records, music, shop, records store, винил, музыка, виниловые пластинки, магазин пластинок">
     <meta name="description" content="Онлайн магазин винила">
-    <title> Vinyl Records Shop </title>
+    <title>Vinyl Records Shop</title>
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 <body>
 
 <header>
-
-    <div>
-        <h1>
-            Vinyl Records Shop
-        </h1>
+    <div class="header-content">
+        <h1>Vinyl Records Shop</h1>
+        <img src="pictures/vinyl.jpg" alt="Vinyl Records Banner" class="banner">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Главная страница</a></li>
+                <li><a href="#shop">Магазин</a></li>
+                <li><a href="#new">Новые альбомы</a></li>
+                <li><a href="#best">Лучшее</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
-
-    <div style="text-align: center; margin-top: 20px;">
-        <img src="pictures/vinyl.jpg" alt="Vinyl Records Banner"
-             style="width: 80%; max-width: 1200px; height: auto; border-radius: 10px;">
-    </div>
-
-    <nav style="margin-right: 20px;">
-        <ul style="list-style-type: none; padding: 0;">
-            <li><a href="#home">Главная страница</a></li>
-            <li><a href="#shop">Магазин</a></li>
-            <li><a href="#new">Новые альбомы</a></li>
-            <li><a href="#best">Лучшее</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-
     <section id="input">
-        <div>
-            <h2 style="margin-top: 150px;">Search</h2>
-            <form>
-                <input type="text" name="query" placeholder="Search records..." style="width: 400px; height: 30px;">
-                <button type="submit" style="height: 35px;">Search</button>
-            </form>
-        </div>
+        <h2>Search</h2>
+        <form class="search-form">
+            <input type="text" name="query" placeholder="Search records...">
+            <button type="submit">Search</button>
+        </form>
     </section>
-
 </header>
 
-<main style="clear: both;">
-    <section id="home" style="margin-top: 50px;">
+<main>
+    <section id="home">
         <h2>Добро пожаловать в наш магазин пластинками</h2>
         <p>Здесь вы можете найти множество виниловых пластинок, от классических хитов до последних релизов. Окунитесь в богатый мир музыки вместе с нами!</p>
     </section>
@@ -56,43 +42,37 @@
     <section id="shop">
         <h2>Магазин</h2>
         <p>Просмотрите нашу коллекцию виниловых пластинок. Независимо от того, ищете ли вы рок, джаз или классическую музыку, у нас есть все!</p>
-
         <div class="album">
-            <img src="/pictures/in_utero.jpg" alt="Album1" width="250" height="250" style="float: left; margin-right: 10px;">
+            <img src="/pictures/in_utero.jpg" alt="Album1">
             <h3>Классика рока</h3>
             <p>Цена: 4500 руб.</p>
             <button>Купить</button>
         </div>
-
     </section>
 
-    <section id="new" style="clear: both;">
+    <section id="new">
         <h2>Новые альбомы</h2>
         <p>Ознакомьтесь с последними пополнениями нашей коллекции</p>
-
         <div class="album">
-            <img src="/pictures/call_me_if_you_get_lost.jpg" alt="Album2" width="250" height="250" style="float: left; margin-right: 10px;">
+            <img src="/pictures/call_me_if_you_get_lost.jpg" alt="Album2">
             <h3>Новый альбом Tyler, the Creator</h3>
             <p>Цена: 5000 руб.</p>
             <button>Купить</button>
         </div>
-
     </section>
 
-    <section id="best" style="clear: both;">
+    <section id="best">
         <h2>Лучшее</h2>
         <p>Самые продаваемые виниловые пластинки месяца!</p>
-
-        <div>
-            <img src="pictures/brat.jpg" alt="Album3" width="250" height="250" style="float: left; margin-right: 10px;">
+        <div class="album">
+            <img src="pictures/brat.jpg" alt="Album3">
             <h3>Альбом brat</h3>
             <p>Цена: 3500 руб.</p>
             <button>Купить</button>
         </div>
-
     </section>
 
-    <section id="contact" style="clear: both;">
+    <section id="contact">
         <h2>Контакты</h2>
         <p>Email: alevushkin2004@mail.ru</p>
         <p>Номер телефона: +79220256776</p>
@@ -100,10 +80,49 @@
         <p>Время работы: 9:00 - 20:00</p>
     </section>
 
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <img src="pictures/me_igor.jpg" alt="Gallery Image 1">
+            <img src="pictures/madlib.jpg" alt="Gallery Image 2">
+            <img src="pictures/kid_a.jpg" alt="Gallery Image 3">
+            <img src="pictures/aphex.jpg" alt="Gallery Image 4">
+        </div>
+    </section>
+
+    <section id="table">
+        <h2>Таблица альбомов</h2>
+        <table class="styled-table">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Исполнитель</th>
+                <th>Цена</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Классика рока</td>
+                <td>Группа A</td>
+                <td>4500 руб.</td>
+            </tr>
+            <tr class="even-row">
+                <td>Новый альбом Tyler</td>
+                <td>Tyler, the Creator</td>
+                <td>5000 руб.</td>
+            </tr>
+            <tr>
+                <td>Альбом brat</td>
+                <td>Брат 2</td>
+                <td>3500 руб.</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 </main>
 
 <footer>
-    <p> 2024 Vinyl Records Shop. Никакие права не защищены </p>
+    <p>2024 Vinyl Records Shop. Никакие права не защищены</p>
 </footer>
 
 </body>

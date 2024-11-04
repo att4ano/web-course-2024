@@ -1,181 +1,181 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f1aa;
-    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
+    background-color: #f4f4f9;
     color: #333;
 }
 
-a {
-    text-decoration: none;
+h1, h2 {
     color: #333;
-}
-
-ul {
-    list-style-type: none;
-    color: #333333;
-    padding: 0;
+    text-align: center;
 }
 
 header {
-    background-color: rgb(147, 133, 89);
-    color: #333;
+    background-color: #333;
+    color: #f4f4f9;
     padding: 20px 0;
+}
+
+.header-content {
     text-align: center;
-    overflow: hidden;
+    padding: 20px;
+    position: relative;
 }
 
-nav {
-    display: inline-block;
-    margin: 0 auto;
+.banner {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
 }
 
-ul {
-    margin-right: 60px;
-    font-size: 20px;
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
-li {
-    display: inline-block;
+.nav-links li {
+    display: inline;
     margin: 0 15px;
 }
 
-a {
-    color: #333333;
-    font-size: 18px;
+.nav-links a {
+    color: #f4f4f9;
+    text-decoration: none;
 }
 
-header nav ul li a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
-section#input {
+#input {
     text-align: center;
     margin-top: 20px;
 }
 
-section#input input[type="text"] {
-    width: 400px;
-    height: 30px;
-    font-size: 16px;
-    padding: 5px;
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-section#input button {
-    height: 35px;
-    font-size: 16px;
-    padding: 5px 10px;
-    background-color: #444;
-    color: white;
+.search-form input {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #333;
+}
+
+.search-form button {
+    height: 40px;
+    padding: 0 15px;
+    background-color: #333;
+    color: #f4f4f9;
     border: none;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
-section#input button:hover {
-    background-color: #666;
+.search-form button:hover {
+    background-color: #555;
 }
 
 main {
-    margin: 50px auto;
-    width: 80%;
-    max-width: 1200px;
+    padding: 20px;
 }
 
 h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
     color: #444;
+    margin-top: 30px;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-p {
-    font-size: 1.2em;
-}
-
-.album {
-    background-color: #f9f9f9;
-    padding: 20px;
+.album, .album img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    overflow: hidden;
 }
 
 .album img {
-    float: left;
-    margin-right: 20px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
-}
-
-.album h3 {
-    margin-top: 0;
-    color: #444;
-}
-
-.album p {
-    font-size: 18px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .album button {
-    padding: 10px 20px;
-    background-color: #444;
-    color: white;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #f4f4f9;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .album button:hover {
-    background-color: #666;
+    background-color: #555;
 }
 
-#best div {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    overflow: hidden;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
-#best img {
-    float: left;
-    margin-right: 20px;
+.gallery-grid img {
+    width: 100%;
     border-radius: 10px;
 }
 
-#best h3 {
-    margin-top: 0;
-    color: #444;
+/* Таблица стилей */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-#best p {
-    font-size: 18px;
-    margin-top: 10px;
+.styled-table th, .styled-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-#best button {
-    padding: 10px 20px;
-    background-color: #444;
-    color: white;
-    border: none;
-    cursor: pointer;
+.styled-table th {
+    background-color: #333;
+    color: #f4f4f9;
 }
 
-#best button:hover {
-    background-color: #666;
-}
-
-#contact p {
-    font-size: 1.2em;
+.styled-table .even-row {
+    background-color: #f9f9f9;
 }
 
 footer {
-    background-color: #444;
-    color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: #f4f4f9;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
 }
