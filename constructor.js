@@ -46,8 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function generateTable(data) {
+        tableContainer.innerHTML = ''; // Очищаем контейнер
+
         if (data.length === 0) {
-            tableContainer.innerHTML = "<p>По вашему запросу ничего не найдено.</p>";
+            const noResults = document.createElement('p');
+            noResults.textContent = "По вашему запросу ничего не найдено.";
+            tableContainer.appendChild(noResults);
             return;
         }
 
@@ -55,32 +59,46 @@ document.addEventListener('DOMContentLoaded', () => {
         table.classList.add('styled-table');
 
         const thead = document.createElement('thead');
-        thead.innerHTML = `
-      <tr>
-        <th>Название</th>
-        <th>Исполнитель</th>
-        <th>Цена</th>
-        <th>Год</th>
-        <th>Формат</th>
-      </tr>
-    `;
+        const headerRow = document.createElement('tr');
+
+        const headers = ["Название", "Исполнитель", "Цена", "Год", "Формат"];
+        headers.forEach(headerText => {
+            const th = document.createElement('th');
+            th.textContent = headerText;
+            headerRow.appendChild(th);
+        });
+
+        thead.appendChild(headerRow);
         table.appendChild(thead);
 
         const tbody = document.createElement('tbody');
         data.forEach(album => {
             const row = document.createElement('tr');
-            row.innerHTML = `
-        <td>${album.title}</td>
-        <td>${album.artist}</td>
-        <td>${album.price} руб.</td>
-        <td>${album.year}</td>
-        <td>${album.format}</td>
-      `;
+
+            const titleCell = document.createElement('td');
+            titleCell.textContent = album.title;
+            row.appendChild(titleCell);
+
+            const artistCell = document.createElement('td');
+            artistCell.textContent = album.artist;
+            row.appendChild(artistCell);
+
+            const priceCell = document.createElement('td');
+            priceCell.textContent = `${album.price} руб.`;
+            row.appendChild(priceCell);
+
+            const yearCell = document.createElement('td');
+            yearCell.textContent = album.year;
+            row.appendChild(yearCell);
+
+            const formatCell = document.createElement('td');
+            formatCell.textContent = album.format;
+            row.appendChild(formatCell);
+
             tbody.appendChild(row);
         });
-        table.appendChild(tbody);
 
-        tableContainer.innerHTML = '';
+        table.appendChild(tbody);
         tableContainer.appendChild(table);
     }
 

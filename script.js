@@ -1,6 +1,6 @@
 
 window.addEventListener('load', () => {
-    const loadTime = performance.timing.domContentLoadedEventEnd - performance.timing.navigationStart;
+    const loadTime = performance.now();
     const footer = document.querySelector('footer');
     const loadInfo = document.createElement('p');
     loadInfo.textContent = `Страница загрузилась за ${loadTime} миллисекунд.`;
@@ -26,7 +26,7 @@ navLinks.forEach(link => {
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    const currentHash = document.location.hash; // Получаем текущий якорь (например, #shop)
+    const currentHash = document.location.hash;
     const navLinks = document.querySelectorAll('.nav-links a');
 
     navLinks.forEach(link => {
