@@ -7,9 +7,7 @@
     <meta name="description" content="Онлайн магазин винила">
     <title>Vinyl Records Shop</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="script.js" defer></script>
-
 </head>
 <body>
 
@@ -19,26 +17,14 @@
         <img src="pictures/vinyl.jpg" alt="Vinyl Records Banner" class="banner">
         <nav>
             <ul class="nav-links">
-                <li><a href="#home">Главная страница</a></li>
-                <li><a href="#shop">Магазин</a></li>
-                <li><a href="#new">Новые альбомы</a></li>
-                <li><a href="#best">Лучшее</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="index.html">Главная страница</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="cd.html">CD</a></li>
                 <li><a href="constructor.html">Конструктор предпочтений</a></li>
             </ul>
         </nav>
-
     </div>
-    <section id="input">
-        <h2>Search</h2>
-        <form class="search-form">
-            <input type="text" name="query" placeholder="Search records...">
-            <button type="submit">Search</button>
-        </form>
-    </section>
 </header>
 
 <main>
@@ -51,7 +37,7 @@
         <h2>Магазин</h2>
         <p>Просмотрите нашу коллекцию виниловых пластинок. Независимо от того, ищете ли вы рок, джаз или классическую музыку, у нас есть все!</p>
         <div class="album">
-            <img src="/pictures/in_utero.jpg" alt="Album1">
+            <img src="pictures/in_utero.jpg" alt="Album1">
             <h3>Классика рока</h3>
             <p>Цена: 4500 руб.</p>
             <button class="add-to-cart" data-name="In Utero" data-price="4500">Добавить в корзину</button>
@@ -62,7 +48,7 @@
         <h2>Новые альбомы</h2>
         <p>Ознакомьтесь с последними пополнениями нашей коллекции</p>
         <div class="album">
-            <img src="/pictures/call_me_if_you_get_lost.jpg" alt="Album2">
+            <img src="pictures/call_me_if_you_get_lost.jpg" alt="Album2">
             <h3>Новый альбом Tyler, the Creator</h3>
             <p>Цена: 5000 руб.</p>
             <button class="add-to-cart" data-name="Call me if you get lost" data-price="4500">Добавить в корзину</button>
@@ -86,36 +72,6 @@
         <p>Номер телефона: +79220256776</p>
         <p>Адрес: Альпийский пер. 15к2</p>
         <p>Время работы: 9:00 - 20:00</p>
-    </section>
-
-    <section id="table">
-        <h2>Таблица альбомов</h2>
-        <table class="styled-table">
-            <thead>
-            <tr>
-                <th>Название</th>
-                <th>Исполнитель</th>
-                <th>Цена</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>In Utero</td>
-                <td>Nirvana</td>
-                <td>4500 руб.</td>
-            </tr>
-            <tr class="even-row">
-                <td>Call me if you get lost</td>
-                <td>Tyler, the Creator</td>
-                <td>5000 руб.</td>
-            </tr>
-            <tr>
-                <td>brat</td>
-                <td>Charlie xcx</td>
-                <td>3500 руб.</td>
-            </tr>
-            </tbody>
-        </table>
     </section>
 </main>
 

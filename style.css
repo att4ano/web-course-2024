@@ -188,8 +188,8 @@ footer {
 }
 
 .nav-links a.active {
-    color: white;
-    background-color: #FF4500;
+    color: black;
+    background-color: #FFD700;
     border-radius: 5px;
     padding: 5px;
     font-weight: bold;

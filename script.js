@@ -1,4 +1,3 @@
-
 window.addEventListener('load', () => {
     const loadTime = performance.now();
     const footer = document.querySelector('footer');
@@ -7,6 +6,7 @@ window.addEventListener('load', () => {
     footer.appendChild(loadInfo);
 });
 
+// Стилизация ссылок при наведении
 const navLinks = document.querySelectorAll('.nav-links a');
 
 navLinks.forEach(link => {
@@ -25,17 +25,17 @@ navLinks.forEach(link => {
     });
 });
 
+// Подсветка активной ссылки
 window.addEventListener('DOMContentLoaded', () => {
-    const currentHash = document.location.hash;
+    const currentPath = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-links a');
 
     navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentHash) {
+        if (link.getAttribute('href') === currentPath ||
+            (currentPath === '' && link.getAttribute('href') === 'index.html')) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
         }
     });
 });
-
-

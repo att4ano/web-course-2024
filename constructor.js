@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function generateTable(data) {
-        tableContainer.innerHTML = ''; // Очищаем контейнер
+        tableContainer.innerHTML = '';
 
         if (data.length === 0) {
             const noResults = document.createElement('p');
