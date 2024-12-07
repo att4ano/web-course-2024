@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
     footer.appendChild(loadInfo);
 });
 
-// Стилизация ссылок при наведении
 const navLinks = document.querySelectorAll('.nav-links a');
 
 navLinks.forEach(link => {
@@ -25,7 +24,6 @@ navLinks.forEach(link => {
     });
 });
 
-// Подсветка активной ссылки
 window.addEventListener('DOMContentLoaded', () => {
     const currentPath = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-links a');
