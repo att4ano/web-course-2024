@@ -5,7 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <style>
+    .gallery-slider {
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    .gallery-slider img {
+      max-width: 100%;
+      height: auto;
+      max-height: 400px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .slick-prev, .slick-next {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    .slick-prev:hover, .slick-next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 20px;
+      color: white;
+    }
+
+    .slick-prev {
+      left: -50px;
+    }
+
+    .slick-next {
+      right: -50px;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -24,11 +69,11 @@
 <main>
   <section id="gallery">
     <h2>Галерея</h2>
-    <div class="gallery-grid">
-      <img src="pictures/me_igor.jpg" alt="Gallery Image 1">
-      <img src="pictures/madlib.jpg" alt="Gallery Image 2">
-      <img src="pictures/kid_a.jpg" alt="Gallery Image 3">
-      <img src="pictures/aphex.jpg" alt="Gallery Image 4">
+    <div class="gallery-slider">
+      <div><img src="pictures/me_igor.jpg" alt="Gallery Image 1"></div>
+      <div><img src="pictures/madlib.jpg" alt="Gallery Image 2"></div>
+      <div><img src="pictures/kid_a.jpg" alt="Gallery Image 3"></div>
+      <div><img src="pictures/aphex.jpg" alt="Gallery Image 4"></div>
     </div>
   </section>
 </main>
@@ -36,5 +81,22 @@
 <footer>
   <p>2024 Vinyl Records Shop. Никакие права не защищены</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.gallery-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      adaptiveHeight: false
+    });
+  });
+</script>
 </body>
 </html>
