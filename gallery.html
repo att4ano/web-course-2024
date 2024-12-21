@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея</title>
+  <!-- Подключение основного CSS-файла для стилизации страницы -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключение Slick Carousel CSS для базового стиля и темы -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+<header>
+  <!-- Заголовок и навигация -->
+  <h1>Галерея</h1>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="cd.html">CD</a></li>
+      <li><a href="constructor.html">Конструктор предпочтений</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="gallery">
+    <h2>Галерея</h2>
+    <!-- Секция для галереи изображений -->
+    <div class="gallery-slider">
+      <!-- Пример юзкейса: Галерея изображений. !-->
+      <div><img src="pictures/me_igor.jpg" alt="Gallery Image 1"></div>
+      <div><img src="pictures/madlib.jpg" alt="Gallery Image 2"></div>
+      <div><img src="pictures/kid_a.jpg" alt="Gallery Image 3"></div>
+      <div><img src="pictures/aphex.jpg" alt="Gallery Image 4"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <!-- Футер с базовой информацией -->
+  <p>2024 Vinyl Records Shop. Никакие права не защищены</p>
+</footer>
+
+<!-- Подключение jQuery, который требуется для работы Slick Carousel -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Подключение библиотеки Slick Carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Инициализация Slick Carousel
+    $('.gallery-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      adaptiveHeight: false
+    });
+  });
+</script>
+</body>
+</html>
